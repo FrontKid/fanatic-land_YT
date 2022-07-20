@@ -1,3 +1,4 @@
+/*font-family: 'Comfortaa', cursive;*/
 *,
 *::after,
 *::before {
@@ -5,7 +6,6 @@
 }
 
 body {
-   /*font-family: 'Comfortaa', cursive;*/
    font-family: 'Inter', sans-serif;
    font-style: normal;
    font-weight: 400;
@@ -23,8 +23,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
    margin: 0;
 }
 
@@ -40,6 +39,37 @@ h6 {
    background-repeat: no-repeat;
 
    min-height: 100vh;
+
+   position: relative;
+}
+
+.header::before {
+   content: "";
+   position: absolute;
+   background-image: url(/img/header-decor-svg.svg);
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 456px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   transform: translateY(51%);
+   z-index: 1;
+}
+
+.header::after {
+   content: "";
+   position: absolute;
+   background-image: url(/img/header-decor-rotate-svg.svg);
+   bottom: 0;
+   right: 0;
+   left: 0;
+   height: 456px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   transform: translateY(90%);
 }
 
 .header__top {
@@ -86,10 +116,13 @@ h6 {
    justify-content: flex-end;
    font-size: 24px;
    line-height: 27px;
+
+   position: relative;
 }
 
 .header__content-box {
    text-align: center;
+   margin-right: 20px;
 }
 
 .header__title {
@@ -107,5 +140,50 @@ h6 {
 
 .header__decor-text {
    position: absolute;
-   top: 0;
+   bottom: 10px;
+   color: rgba(0, 147, 161, 0.3);
+
+}
+
+
+
+.header__content p.header__decor-text--dom {
+   font-family: 'Comfortaa', cursive;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 130px;
+   line-height: 145px;
+   text-transform: uppercase;
+   bottom: -122px;
+   right: 145px;
+
+   z-index: 0;
+}
+
+.header__decor-text--free {
+   font-family: 'Comfortaa', cursive;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 130px;
+   line-height: 145px;
+   text-transform: uppercase;
+   bottom: -270px;
+   left: 250px;
+   z-index: 1;
+}
+
+.header__decor-text--last {
+   max-width: 360px;
+
+   font-style: italic;
+   font-weight: 300;
+   font-size: 32px;
+   line-height: 39px;
+   text-align: center;
+   color: #0093A1;
+
+   bottom: -145px;
+   right: 145px;
+
+   z-index: 1;
 }
