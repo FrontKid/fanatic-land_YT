@@ -174,16 +174,18 @@ h5 {
 
 .header__decor-text--last {
    max-width: 360px;
-
    font-style: italic;
    font-weight: 300;
    font-size: 32px;
    line-height: 39px;
    text-align: center;
    color: #0093A1;
-
    bottom: -145px;
    right: 145px;
-
    z-index: 1;
 }
+
+
+/* 
+ ? New section INFO
+*/
