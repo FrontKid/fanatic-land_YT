@@ -1,4 +1,7 @@
 /*font-family: 'Comfortaa', cursive;*/
+/* 
+ ? GLOBAL STYLES START
+*/
 *,
 *::after,
 *::before {
@@ -60,7 +63,13 @@ h5 {
    font-size: 60px;
    line-height: 67px;
 }
+/* 
+ ? GLOBAL STYLES END
+*/
 
+/* 
+ ? HEADER START
+*/
 .header {
    background-image: url(../img/header-bg.jpg);
    background-size: cover;
@@ -206,9 +215,12 @@ h5 {
    right: 145px;
    z-index: 1;
 }
+/* 
+ ? GLOBAL STYLES END
+*/
 
 /* 
- ? New section INFO
+ ? NEW SECTION INFO START
 */
 
 .info {
@@ -216,8 +228,6 @@ h5 {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: -190px 80px;
-
-   /*position: relative;*/
 }
 
 .info::before {
@@ -309,8 +319,13 @@ h5 {
 .info__specs-caption {
    width: 180px;
 }
+/* 
+ ? NEW SECTION INFO END
+*/
 
-/*SECTION BUY START*/
+/* 
+ ? SECTION BUY START
+*/
 
 .buy {
    padding: 150px 0 0;
@@ -365,7 +380,13 @@ h5 {
    bottom: 130px;
    right: 0;
 }
+/* 
+ ? SECTION BUY END
+*/
 
+/* 
+ ? SECTION TECHNOLOGY START
+*/
 .technology {
    margin-bottom: 150px;
 }
@@ -407,6 +428,13 @@ h5 {
 .technology__list-item:not(:last-child) {
    margin-bottom: 15px;
 }
+/* 
+ ? SECTION TECHNOLOGY END
+*/
+
+/* 
+ ? SECTION GALLERY START
+*/
 .gallery__box {
    display: flex;
    gap: 68px;
@@ -483,3 +511,14 @@ h5 {
    text-align: center;
    align-items: center;
 }
+/* 
+ ? SECTION GALLERY END
+*/
+
+/* 
+ ? FOOTER START
+*/
+
+/* 
+ ? FOOTER END
+*/
